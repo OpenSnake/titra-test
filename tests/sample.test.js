@@ -1,8 +1,9 @@
-const assert = require('assert');
+describe('Simple stubs', () => {
+  test('Test 1: should always pass', () => {
+    expect(true).toBe(true);
+  });
 
-describe('Math operations', () => {
-  it('should add numbers correctly', () => {
-    const result = 1 + 1;
-    assert.strictEqual(result, 2);
+  test('Test 2: basic math should work', () => {
+    expect(1 + 1).toBe(2);
   });
 });
